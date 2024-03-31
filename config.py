@@ -44,6 +44,9 @@ DB_NAME = environ.get("DB_NAME", "vjbotz")
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
+#force sub channel id, if you want enable force sub
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+
 # Bot Information
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 BOT_USERNAME = environ.get("BOT_USERNAME", "") # your bot username without @
@@ -52,6 +55,9 @@ PICS = (environ.get('PICS', 'https://graph.org/file/82ef767ffebe3a948e476.jpg ht
 # Auto Delete Information
 AUTO_DELETE = int(environ.get("AUTO_DELETE", "20")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
+
+#Force sub message 
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to join in my Channel/Group to use me\n\nKindly Please join Channel</b>")
 
 # Channel Information
 LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
